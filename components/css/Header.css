@@ -1,0 +1,120 @@
+header {
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: space-between;
+    position: relative;
+    /* Important for positioning dropdown */
+    z-index: 10;
+}
+
+.header-title {
+    color: #3c4e25;
+    font-family: 'BBH Sans Hegarty', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.header-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3c4e25;
+    outline: none;
+    background: #7ea356;
+    cursor: pointer;
+    transition: .2s ease;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-btn:hover {
+    transform: scale(1.05);
+    border: 2px solid #2d3a1c;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #3c4e25;
+    transition: 0.3s;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    background-color: #fff3d9;
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.header-list a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: .3s;
+    border-bottom: 1px solid transparent;
+}
+
+.header-list a:hover {
+    border-color: #000;
+}
+
+/* Responsive tyylitykset */
+@media (max-width: 1000px) {
+    header {
+        flex-wrap: nowrap;
+        padding: 0 20px;
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff3d9;
+        padding: 1rem 2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 5;
+    }
+
+    .header-nav.open {
+        display: flex;
+    }
+
+    .header-list {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        border: none;
+        background: none;
+    }
+
+    .header-btn {
+        margin-left: auto;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
