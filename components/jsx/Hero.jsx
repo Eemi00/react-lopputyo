@@ -1,6 +1,7 @@
 import '../css/Hero.css';
 import '../../src/App.css'
 
+// Hero osio
 function Hero() {
   return (
     <div className="heroSection">

@@ -8,6 +8,7 @@ import Hero from '../components/jsx/Hero.jsx';
 import PhotoGallery from '../components/jsx/Gallery.jsx';
 import Map from '../components/jsx/Map.jsx';
 
+// Pääfunktio
 function App() {
   return (
     <div>

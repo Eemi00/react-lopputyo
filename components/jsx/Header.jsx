@@ -15,6 +15,7 @@ function Header() {
         <header>
             <h1 className="header-title">GEOWIKI</h1>
 
+            {/* Haetaan kaikki nimet headerLinks arraysta */}
             <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
                 <ul className="header-list">
                     {headerLinks.map((link) => (
@@ -27,6 +28,7 @@ function Header() {
 
             <a href="#footer" className="header-btn">Lähteet</a>
 
+            {/* Hampurilais valikko puhelimelle */}
             <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                 <span className="bar"></span>
                 <span className="bar"></span>

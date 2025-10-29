@@ -118,3 +118,9 @@ header {
         display: flex;
     }
 }
+
+@media (max-width: 455px) {
+    .header-btn {
+        padding: 5px 15px;
+    }
+}

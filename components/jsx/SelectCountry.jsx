@@ -7,6 +7,7 @@ function SelectCountry() {
     const [countries, setCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState(null);
 
+    // Ajaxin avulla haetaan tieto APIn JSON tiedostosta
     useEffect(() => {
         const xhr = new XMLHttpRequest();
         xhr.open('GET', 'https://corsproxy.io/?https://www.apicountries.com/countries');
@@ -25,6 +26,7 @@ function SelectCountry() {
         xhr.send();
     }, []);
 
+    // Etsitään oikea valtio valinnan mukaan
     const handleChange = (e) => {
         const country = countries.find(c => c.name === e.target.value);
         setSelectedCountry(country);
@@ -33,6 +35,7 @@ function SelectCountry() {
     return (
         <div className="countrySection" id="select-country">
 
+            {/* Puoli jossa valitaan valtio */}
             <div className="left">
                 <h1>Opiskele eri valtioiden maantietoa</h1>
 
@@ -43,6 +46,7 @@ function SelectCountry() {
                 </p>
 
                 <form>
+                    {/*Haetaan kaikki valtiot optioneiksi jotta käyttäjä voi valita minkä tahansa valtion */}
                     <label htmlFor="country-select">Valitse maa: </label>
                     <select id="country-select" onChange={handleChange} value={selectedCountry?.name || ''}>
                         <option value="">-- Valitse maa --</option>
@@ -53,6 +57,7 @@ function SelectCountry() {
 
             </div>
 
+            {/* Lisätään valtion tiedot oikealle puolelle */}
             <div className="right">
                 {selectedCountry && <CountryInfo country={selectedCountry} />}
             </div>

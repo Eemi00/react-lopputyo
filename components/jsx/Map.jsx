@@ -4,6 +4,7 @@ import '../css/Map.css';
 function Map() {
     const [loading, setLoading] = useState(true);
 
+    // Efectit kartalle
     useEffect(() => {
         const mapOptions = {
             center: { lat: 47.5562, lng: 1.0518 },

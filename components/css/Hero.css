@@ -1,5 +1,5 @@
 .heroSection {
-    background-image: url(../../src/assets/heroImg.png);
+    background-image: url('../../src/assets/heroImg.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -57,5 +57,11 @@
 
     .hero-title {
         font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 431px) {
+    .hero-items {
+        margin-right: 10rem;
     }
 }

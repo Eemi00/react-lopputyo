@@ -9,6 +9,7 @@ function CountryInfo({ country }) {
   useEffect(() => {
     if (!country) return;
 
+    // Loader jotta kuvat ja tiedot kerkeää ladata käyttäjälle
     setLoading(true);
     const timer = setTimeout(() => {
       setVisibleCountry(country);
@@ -27,6 +28,7 @@ function CountryInfo({ country }) {
   }
 
   return (
+    // Valitun maan oikeat tiedot jotka haetaan rajapinnasta
     <div key={visibleCountry.name} className="country-info">
       <h1>{visibleCountry.name}</h1>
 

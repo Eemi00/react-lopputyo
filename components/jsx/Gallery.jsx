@@ -15,6 +15,7 @@ function PhotoGallery() {
   return (
     <div className="gallery-container" id="gallery">
       <h1>Kuvagalleria</h1>
+      {/* Lisätään kaikki kuvat */}
       {images.map((src, index) => (
         <div key={index} className="gallery-item">
           <img src={src} alt={`Gallery ${index}`} />

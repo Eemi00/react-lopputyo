@@ -6,6 +6,7 @@ function Footer() {
         <footer className="footer" id="footer">
             <div className="footer-columns">
                 <div className="footer-left">
+                    {/* Lähteet kuville ja rajapinnoille */}
                     <h3><i className="fa-solid fa-photo-film"></i> Kuvat</h3>
                     <p>
                         Kaikki kuvat ovat peräisin <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a> sivustolta, ilmainen kuvapankki projekteihin.
@@ -29,6 +30,7 @@ function Footer() {
                 <p className="footer-note">
                     Tämä sivu on osa henkilökohtaista projektia. Lähteet ovat julkisesti saatavilla.
                 </p>
+                {/* Some linkit */}
                 <div className="footer-icons">
                     <a href="https://github.com/Eemi00" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-github"></i>
