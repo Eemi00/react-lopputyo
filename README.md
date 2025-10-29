@@ -1,18 +1,18 @@
-# 🎓 React Lopputyö
+# React Lopputyö
 
-## 📘 Projektin Kuvaus
+## Projektin Kuvaus
 
 Tämä projekti oli koulutyötä varten. Sen tarkoituksena oli osoittaa osaamista seuraavien ohjelmointitekniikoiden parissa:
 
-- ⚛️ **React.JS**
-- 🔄 **AJAX**
-- 📦 **JSON**
+- **React.JS**
+- **AJAX**
+- **JSON**
 
 Projektissa yhdistettiin nämä tekniikat toimivaksi kokonaisuudeksi joka havainnollistaa web-kehityksen perusperiaatteita.
 
 ## 🔗 Linkki Projektiin
 
-👉 [Avaa projekti tästä](https://geronimo.okol.org/~illeem/react-lopputyo)
+[Avaa projekti tästä](https://geronimo.okol.org/~illeem/react-lopputyo)
 
 ## 🛠️ Käytetyt Teknologiat
 
