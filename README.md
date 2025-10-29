@@ -21,10 +21,3 @@ Projektissa yhdistettiin nämä tekniikat toimivaksi kokonaisuudeksi joka havain
 | React.JS   | Käyttöliittymän rakentaminen komponenttipohjaisesti |
 | AJAX       | Tiedonsiirto ilman sivun uudelleenlatausta |
 | JSON       | Tietojen muotoilu ja siirto. API:n mukana käyetty |
-
-## 📸 Kuvakaappaukset (Lisättävissä)
-
-Voit halutessasi lisätä kuvakaappauksia projektista tähän kohtaan:
-
-```md
-![Projektin näkymä](polku/kuvaan.png)
