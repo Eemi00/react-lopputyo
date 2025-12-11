@@ -1,22 +1,40 @@
-import { useEffect, useState } from 'react';
-import '../css/Map.css';
+import { useEffect, useState } from "react";
+import "../css/Map.css";
 
 function Map() {
     const [loading, setLoading] = useState(true);
 
-    // Efectit kartalle
     useEffect(() => {
-        const mapOptions = {
-            center: { lat: 47.5562, lng: 1.0518 },
-            zoom: 4,
-            styles: []
-        };
+        // Check if script already exists
+        if (!window.google) {
+            const script = document.createElement("script");
+            script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY`;
+            script.async = true;
+            script.defer = true;
+            script.onload = () => {
+                initMap();
+            };
+            document.body.appendChild(script);
+        } else {
+            initMap();
+        }
 
-        const map = new window.google.maps.Map(document.getElementById('map'), mapOptions);
+        function initMap() {
+            const mapOptions = {
+                center: { lat: 47.5562, lng: 1.0518 },
+                zoom: 4,
+                styles: [],
+            };
 
-        window.google.maps.event.addListenerOnce(map, 'idle', () => {
-            setLoading(false);
-        });
+            const map = new window.google.maps.Map(
+                document.getElementById("map"),
+                mapOptions
+            );
+
+            window.google.maps.event.addListenerOnce(map, "idle", () => {
+                setLoading(false);
+            });
+        }
     }, []);
 
     return (
